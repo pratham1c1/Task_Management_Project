@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+  
+  
+  .siteLogo{
+    height: 15em;
+      padding: 0.5em;
+      will-change: filter;
+      transition: filter 300ms;
+      position: absolute;
+      top: -60px;
+      left: 0px;
+  }
+  
+  .containerFluid{
+    height: 6em;
+    padding-top: 12px;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0px;
+    display: flex;
+  }
+  .firstNavList{
+    margin-left: 45em;
+    background-color: rgb(245 245 245);
+    min-width: 300px;
+  }
+  
+  button.firstNavListButtons{
+    color: rgb(0, 0, 0);
+    background-color: rgb(245 245 245);
+    border: none;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+  .secondNavList{
+    margin-left: -47px;
+    min-width: 310px;
+  }
+  
+  button.firstNavListButtons:hover{
+    background-color: rgb(202 202 202);
+  }
+  
+  .lineDivider{
+    border-left: 1px solid black;
+    height: 25px;
+    margin-top: 12px;
+    margin-left: -36px;
+    position: relative;
+  }
+  
+  button.loginButton{
+    background-color: #369096;
+    margin-left: 10px;
+    font-size: 18px;
+    color: white;
+    border: none;
+  }
+  button.loginButton:hover{
+    background-color: #7cbbbf;
+    color: black;
+  }
+  
+  button.signupButton{
+    background-color: #d55d13;
+    margin-left: 20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    color: white;
+    border: none;
+  }
+  button.signupButton:hover {
+    background-color: #d68857;
+    color: black
+  }
+  
+  button:focus, button:focus-visible{
+    outline: 1px auto #bbbbbb;
+  }

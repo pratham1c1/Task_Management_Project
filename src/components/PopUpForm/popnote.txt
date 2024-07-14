@@ -1,0 +1,7 @@
+ Required condition to open & close the popup in popup.jsx file -:
+ 
+ if (!(event.target.closest('.popupDiv') || event.target.closest('.createButton'))) {
+                onClose();
+            }
+
+--------------------

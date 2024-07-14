@@ -1,0 +1,99 @@
+/* Add this new style for the background blur */
+body.blur {
+    overflow: hidden; /* Prevent scrolling when the popup is visible */
+    height: 100%;
+    width: 100%;
+}
+
+.popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    opacity: 0; /* Start invisible */
+    pointer-events: none; /* Prevent interaction when invisible */
+    transition: opacity 0.5s ease; /* Transition for background fade */
+    backdrop-filter: blur(0); /* Start with no blur */
+}
+
+.popupContainer.visible {
+    opacity: 1; /* Fully visible */
+    pointer-events: auto; /* Allow interaction */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+}
+
+.popupDiv {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    max-height: 80%;
+    overflow-y: auto;
+    transform: translateY(100%) scale(0.8); /* Start below the screen and scaled down */
+    opacity: 0; /* Start invisible */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transition for moving and fading in the popup */
+}
+
+.popupContainer.visible .popupDiv {
+    transform: translateY(0) scale(1); /* Move to original position and scale to normal size */
+    opacity: 1; /* Fully visible */
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popupForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.formLabel {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formInput, .formTextarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formInput[type="date"] {
+    padding: 6px;
+}
+
+.formSubmitContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formSubmit {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.formSubmit:hover {
+    background-color: #45a049;
+}

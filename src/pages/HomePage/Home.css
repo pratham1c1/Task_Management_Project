@@ -1,0 +1,78 @@
+  body {
+    margin: 0;
+    /* display: flex; */
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+ 
+
+  .middle_content{
+    max-width: 918px;
+      text-align: center;
+      margin: 5em 8em;
+      font-size: 23px;
+      font-family: -webkit-body;
+      min-width: 500px;
+  }
+  
+  h3.middle_content_slogan{
+    color: #a6a0ad;
+    font-size: 23px;
+  }
+
+  button.signup_button{
+    background-color: #d55d13;
+    margin-left: 20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+    width: 136px;
+    height: 58px;
+    font-size: 19px;
+    border: none;
+  }
+
+  button.signup_button:hover {
+    background-color: #d68857;
+  }
+  
+  button:focus, button:focus-visible{
+    outline: 1px auto #bbbbbb;
+  }

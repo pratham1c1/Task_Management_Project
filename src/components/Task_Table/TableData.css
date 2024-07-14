@@ -1,0 +1,49 @@
+.task_table{
+    background-color: #eba7a7;
+    height: 400px;
+    margin: 10px 10px 10px 10px;
+  }
+
+
+  /* Table CSS */
+  .ac_table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: separate;
+    border-spacing: 0px 2px;
+    width: 100%;
+    
+  }
+  .ac_table tbody{
+    background-color: #446d8b;
+  }
+  .ac_table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 7px;
+    
+    color: white;
+    max-width: 300px;
+    height: 51px;
+    text-align: center;
+  }
+  
+  .ac_table tr:hover {background-color: #4e80a3;}
+
+  .ac_table tr:focus-visible {outline-color: rgba(255, 247, 5, 0.8);}
+
+
+  
+  .ac_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .ac_table tr{
+    max-width: 100px;
+  }

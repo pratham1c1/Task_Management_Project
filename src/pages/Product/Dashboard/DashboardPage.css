@@ -1,0 +1,94 @@
+.right_side{
+    width: 100%;
+    height: 100%;
+    margin: 5 5 5 5;
+  }
+
+  .card_template{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .main_page{
+    display: flex;
+    height: 100%;
+  }
+
+
+/* CSS for create_button */
+.divCreateButton{
+    width: 98%;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    place-content: end;
+}
+
+.createButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.createButton:hover {
+  background-color: #0056b3;
+}
+
+/* --------------------- */
+.actionButtons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.EditIcon, .contactIcon{
+  cursor: pointer;
+}
+/* ----------------------- */
+
+/* For popup */
+
+
+
+.pagePopupForm{
+    display: grid;
+    position: absolute;
+    left: 25%;
+    top: 11%;
+    width: 50%;
+    height: 100%;
+    overflow-y: hidden;
+    visibility: hidden;
+    /* animation-fill-mode: forwards; */
+    /* transform: translateY(0%) scale(0.5); */
+    /* opacity: 0;  */
+    /* transition: transform 0.5s ease; */
+    /* animation : popupAnimationOpen 0.3s linear; */
+}
+
+@keyframes popupAnimationOpen {
+  from {scale: 0;}
+  to {scale: 1;visibility: visible;}
+}
+
+@keyframes popupAnimationClose {
+  from {visibility:visible; scale: 1;}
+  to {scale: 0;visibility: hidden;}
+}
+
+
+.blury {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: -1;
+  }

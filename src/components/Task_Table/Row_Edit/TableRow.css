@@ -1,0 +1,65 @@
+.scrollable {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    place-content: center;
+}
+
+  /* Table Css END  */
+
+
+  /* width */
+/* width */
+.scrollable::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scrollable::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollable::-webkit-scrollbar-thumb {
+  background: rgb(24, 69, 120); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background: #728dce; 
+}
+
+/* Last cell  */
+
+.LastCell {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.editable-row {
+  box-shadow: 0 0 10px rgba(255, 247, 5, 0.8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* To flash the row after clicking edit  */
+@keyframes flash-animation {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #163e55;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+
+/* Used for flash effect for the row  */
+.flash-effect {
+  animation: flash-animation 0.8s ease-out;
+}
